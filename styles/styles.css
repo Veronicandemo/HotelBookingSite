@@ -120,8 +120,8 @@ h1 span{
 
 }
 .info-icons{
-    width: 36px;
-    height: 36px;
+    width: 56px;
+    height: 56px;
     color: #2f74b3;
     --ionicon-stroke-width: 46px;
 }
@@ -225,6 +225,10 @@ h1 span{
     width: 100px;
     height: 100px;
 }
+.facility-image{
+    border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
+}
 .rooms-p{
     font-size: 1.6rem;
     text-align: center;
@@ -301,6 +305,11 @@ h1 span{
     display: flex;
     gap: 25%;
     font-size: 1.6rem;
+}
+.food-image{
+    border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
+    width: 100%;
 }
 .section-testimonials{
     display: grid;
