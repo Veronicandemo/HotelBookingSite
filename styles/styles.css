@@ -531,3 +531,7 @@ footer {
   width: 100%;
   height: 50%;
 }
+.book {
+  margin-top: 1%;
+  gap: 30%;
+}
