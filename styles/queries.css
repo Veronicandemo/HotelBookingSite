@@ -132,7 +132,7 @@
 }
 @media (max-width: 650px) {
   .facility-image {
-    width: 50%;
+    width: 100%;
     height: 50%;
   }
   .food-image {
