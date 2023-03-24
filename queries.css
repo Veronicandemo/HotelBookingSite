@@ -60,8 +60,14 @@
   .subscribe {
     gap: 10%;
   }
+  
+
 }
-@media (max-width: 940px) {
+@media screen and (max-width: 940px) {
+  /* .login */
+  /* .sign-up{ */
+     /* padding: 5px 10px; */
+  /* } */
   h1 {
     font-size: 4rem;
   }
@@ -81,12 +87,8 @@
     letter-spacing: 1.1;
   }
   .navigation-header ul {
-    font-size: 14px;
-    gap: 6%;
-  }
-  .login,
-  .sign-up {
-    padding: 10px 16px;
+    font-size: 12px;
+    gap: 4%;
   }
   .check-Ins {
     gap: 1%;
@@ -129,8 +131,17 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  /* .sec-aboutus p{
+    margin: auto;
+    font-size: 12px;
+  } */
 }
-@media (max-width: 650px) {
+
+
+@media only screen and (max-width: 500px) {
+  body{
+    font-size: 7px !important;
+  }
   .facility-image {
     width: 50%;
     height: 50%;
@@ -143,4 +154,10 @@
     width: 300px;
     gap: 15%;
   }
+  .sec-aboutus p{
+    margin-right: 10px;
+    font-size: 15px !important;
+    gap: 1%;
+  }
+
 }
