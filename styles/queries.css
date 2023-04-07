@@ -82,11 +82,8 @@
   }
   .navigation-header ul {
     font-size: 14px;
-    gap: 6%;
-  }
-  .login,
-  .sign-up {
-    padding: 10px 16px;
+    gap: 4%;
+    overflow: hidden;
   }
   .check-Ins {
     gap: 1%;

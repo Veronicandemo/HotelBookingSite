@@ -4,6 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Oxygen:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+<script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/queries.css" />
+    <link rel="stylesheet" href="./contact.css">
     <title>Document</title>
 </head>
 <body>
@@ -14,10 +33,97 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="./hotels.html">Hotels</a></li>
             <li><a href="./aboutus.html">About us</a></li>
-            <li><a href="#"login">Login</a></li>
+            <li><a href="#" class="login">Log In</a></li>
             <li><a href="#" class="sign-up">Sign Up</a></li>
           </ul>
+          <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav"name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav"name="close-outline"></ion-icon>
+          </button>
         </nav>
       </header>
+      <main>
+      <div class="heading">
+        <h3>Contact Us</h3>
+        <h2>We'd &#9825; to help!</h2>
+      </div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, minus.</p>
+      <form action="#" class="cta-form">
+        <div class="inputs">
+          <div>
+            <label for="fname">First Name</label>
+            <input type="text" placeholder="first name" required>
+          </div>
+          <div>
+            <label for="lname">Last Name</label>
+            <input type="text" placeholder="last name" required>
+          </div>
+        </div>
+        <div class="inputs">
+          <div>
+            <label for="email">Email address</label>
+            <input type="text" placeholder="email address" required>
+          </div>
+       <div>
+         <label for="fname">Phone number</label>
+         <input type="tel" placeholder="Phone name">
+      </div>
+        </div>
+        <div class="inputs">
+      <div>
+      <label for="fname">Posta code</label>
+      <input type="text" placeholder="Postal code">
+    </div>
+    <div>
+      <label for="fname">Country</label>
+      <input type="text" placeholder="country">
+    </div>
+        </div>
+      <div class="inputs">
+
+        <div class="message">
+          <label for="message">Message</label>
+          <input type="text" 
+          id="message"
+          placeholder="Message"
+          >
+        </div>
+      </div>
+      </form>
+      <button class="btn">Submit</button>
+    </main>
+      <footer>
+        <div class="footer">
+            <nav>
+                <ul>
+                <li><p>NURO SHEI</p></li>
+                <div class="footer-icons">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </div>
+                <li><a href="#">haediqan033@gmail.com</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <p>Learn More</p>
+                <ul>
+                <li><a href="">Sucess stories</a></li>
+                <li><a href="">Why us</a></li>
+                <li><a href="">How it works</a></li>
+                <li><a href="">FAQs</a></li>
+            </ul>
+            </nav>
+            <nav>
+                <p>Resourses</p>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>
