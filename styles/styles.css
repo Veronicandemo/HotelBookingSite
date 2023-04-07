@@ -69,7 +69,7 @@ body {
 }
 .navigation-header ul {
   display: flex;
-  gap: 5%;
+  gap: 3%;
   color: #ffffff;
   list-style: none;
   font-size: 1.5rem;

@@ -1,9 +1,5 @@
-/* @media (max-width: 1200px){
-    .footer p{
-       letter-spacing: 1px;
-    } */
-/* } */
-@media (max-width: 950){
+
+@media (max-width: 950px){
     html,
     body{
         font-size: 24px;
@@ -14,10 +10,15 @@
         padding: 1%;
         
     }
+    .footer {
+        gap: 10%;
+        font-size: 20px !important;
+      }
+   
     /* MOBILE NAV */
-    .btn-mobile-nav{
-      display: block !important;
-    }
+/* .btn-mobile-nav{
+      display: block;
+    } */
 .cta-form input{
     width: 80% !important;
     padding: 15px !important;
@@ -34,14 +35,13 @@
     font-size: 20px !important;
 }
 .navigation-header{
-    max-width: 50% !important;
     overflow-y: hidden !important;
   }
 
 }
-@media (max-width: 650px) and (min-width: 430px){
+@media (max-width: 650px) and (min-width: 400px){
     .navigation-header ul{
-        gap: 5%;
+        gap: 2%;
     }
     .signup{
     padding: 1%;
@@ -52,7 +52,6 @@
     }
     .footer{
         gap: 5%;
-        font-size: 18px ;
         flex-direction: column;
         
     }
@@ -87,6 +86,23 @@
         margin-bottom: 3%;
     }
 }
+@media (max-width: 399px) and (min-width: 200px){
+    .heading h3,h2{
+        margin: 1%;
+        font-size: 15px;
+        /* font-size: 12px; */
+    }
+    footer{
+        max-width: 100%;
+        font-size: 8px;
+    }
+    .footer{
+        flex-direction: column;
+        gap: 3%;
+
+    }
+    
+}
 
 *:focus{
     outline: none;
@@ -98,7 +114,6 @@ font-size: 20px;
   color: #111;
 }
 /* MOBILE */
-
 .btn-mobile-nav{
     border: none;
     background: none;
@@ -150,7 +165,7 @@ input{
     font-family: inherit;
 }
 .heading{
-    margin: 2% 35%;
+    margin: 2% 25%;
 }
 p{
     margin-left: 20%;
