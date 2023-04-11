@@ -33,9 +33,8 @@
     margin-left: 4%;
   }
   .section-hotels h2 {
-    margin-top: 20%;
-    margin-bottom: 2%;
-    font-size: 3rem;
+    margin-top: 40%;
+    font-size: 2rem;
   }
   .customer-box {
     margin-bottom: -10%;
@@ -72,10 +71,6 @@
   .subscribe span {
     padding: 1rem 1rem;
     font-size: 12px;
-  }
-  .footer {
-    gap: 10%;
-    font-size: 10px !important;
   }
   .hotel p {
     margin-top: 130%;
@@ -126,12 +121,22 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  .sec-aboutus p{
+    font-size: 24px !important;
+  }
+  .signup{
+    padding: 1% !important;
+
+    }
+  .login{
+        padding: 1% !important;
+    } 
 }
 
 
 @media only screen and (max-width: 500px) {
   body{
-    font-size: 7px !important;
+    font-size: 16px !important;
   }
   .facility-image {
     width: 50%;
@@ -145,10 +150,62 @@
     width: 300px;
     gap: 15%;
   }
-  .sec-aboutus p{
-    margin-right: 10px;
-    font-size: 15px !important;
-    gap: 1%;
+  .sec-aboutus{
+    flex-direction: column;
+    font-size: 30px !important;
   }
+  .footer{
+    flex-direction: column;
+    gap: 10%;
+  }
+
+}
+@media (max-width: 700px) and (min-width: 200px){
+  /* MOBILE NAV */
+   .btn-mobile-nav{
+      display: block !important;
+    } 
+    .navigation-header{
+        background-color: rgba(253, 241, 232, 0.97);
+        padding-bottom: 13%;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        transition: all 5s ease-in-out;
+        /* Make it come from the right */
+        transform: translateX(100%);
+        /* Hide it visually */
+        opacity: 0;
+        /* Make it unaccessible with mouse and keybord */
+        pointer-events: none;
+        /* Hide from screen readers */
+        visibility: hidden;
+    }
+    .navigation-header ul{
+        flex-direction: column;
+        font-size: 1rem;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.0);
+    }
+    .navigation-header a {
+      color: #222;
+      text-decoration: none;
+    }
+    .nav-open .navigation-header{
+      opacity: 1;
+      pointer-events: auto;
+      visibility: visible;
+      transform: translateX(0);
+  
+    }
+    .nav-open .icon-mobile-nav[name=close-outline]{
+      display: block;
+  }
+  .nav-open .icon-mobile-nav[name=menu-outline]{
+      display: none;
+  }
+
 
 }

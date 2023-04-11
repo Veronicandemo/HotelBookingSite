@@ -73,7 +73,8 @@
     font-size: 12px;
   }
   .footer {
-    gap: 18%;
+    flex-direction: column;
+    gap: 20%;
     font-size: 1.6rem;
   }
   .hotel p {

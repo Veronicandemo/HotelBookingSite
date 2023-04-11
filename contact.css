@@ -2,23 +2,20 @@
 @media (max-width: 950px){
     html,
     body{
-        font-size: 24px;
+        font-size: 24px !important;
     }
     footer {
-        font-size: 10px;
+        font-size: 8px;
         gap: 3%;
         padding: 1%;
         
     }
     .footer {
         gap: 10%;
-        font-size: 20px !important;
+        font-size: 14px !important;
       }
    
-    /* MOBILE NAV */
-/* .btn-mobile-nav{
-      display: block;
-    } */
+  
 .cta-form input{
     width: 80% !important;
     padding: 15px !important;
@@ -31,7 +28,6 @@
 .cta-form label{
     display: block;
     font-weight: 500;
-    /* margin-bottom: 12px; */
     font-size: 20px !important;
 }
 .navigation-header{
@@ -39,21 +35,65 @@
   }
 
 }
-@media (max-width: 650px) and (min-width: 400px){
-    .navigation-header ul{
+@media (max-width: 700px) and (min-width: 200px){
+/* MOBILE NAV */
+ .btn-mobile-nav{
+    display: block !important;
+  } 
+  .navigation-header{
+      background-color: rgba(253, 241, 232, 0.97);
+      padding-bottom: 13%;
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      transition: all 1s ease-in-out;
+      /* Make it come from the right */
+      transform: translateX(100%);
+      /* Hide it visually */
+      opacity: 0;
+      /* Make it unaccessible with mouse and keybord */
+      pointer-events: none;
+      /* Hide from screen readers */
+      visibility: hidden;
+  }
+  .navigation-header ul{
+      flex-direction: column;
+      font-size: 1rem;
+      font-weight: 600;
+      background-color: rgba(0, 0, 0, 0.0);
+  }
+  .navigation-header a {
+    color: #222;
+    text-decoration: none;
+  }
+  .nav-open .navigation-header{
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+
+  }
+  .nav-open .icon-mobile-nav[name=close-outline]{
+    display: block;
+}
+.nav-open .icon-mobile-nav[name=menu-outline]{
+    display: none;
+}
+   .navigation-header ul{
         gap: 2%;
     }
     .signup{
-    padding: 1%;
+    padding: 1% !important;
 
     }
-    .login{
-        padding: 1%;
-    }
+    /* .login{
+        padding: 1% !important;
+    }  */
     .footer{
         gap: 5%;
-        flex-direction: column;
-        
+        flex-direction: column;   
     }
     form{
         margin-left: 1% !important;
@@ -71,7 +111,6 @@
     .cta-form label{
         display: block;
         font-weight: 500;
-        /* margin-bottom: 12px; */
         font-size: 16px !important;
     }
     .heading{
@@ -90,7 +129,6 @@
     .heading h3,h2{
         margin: 1%;
         font-size: 15px;
-        /* font-size: 12px; */
     }
     footer{
         max-width: 100%;
@@ -99,7 +137,6 @@
     .footer{
         flex-direction: column;
         gap: 3%;
-
     }
     
 }
@@ -108,8 +145,14 @@
     outline: none;
     box-shadow: 0 0 0 5px rgba(153, 153, 153, 0.5);
 }
+html{
+    overflow-x: hidden;
+
+}
 body{
-font-size: 20px;
+    position: relative;
+    overflow-x: hidden;
+   font-size: 20px;
   font-family: "Roboto", sans-serif;
   color: #111;
 }
@@ -164,8 +207,12 @@ input{
     font-size: 18px;
     font-family: inherit;
 }
+/* .header{
+    position: absolute  ;
+} */
 .heading{
     margin: 2% 25%;
+
 }
 p{
     margin-left: 20%;
